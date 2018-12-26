@@ -1,0 +1,10 @@
+server:
+  port: 3123
+logging:
+  level:
+    root: info
+    reactor.ipc.netty: info
+    reactor.netty.http.server.AccessLog: info
+    reactor.netty.resources.PooledConnectionProvider: off
+  pattern:
+    console: "%d %magenta([%thread]) %cyan([%X]) - %highlight(%-5level) %logger{36}.%M - %msg%n"
